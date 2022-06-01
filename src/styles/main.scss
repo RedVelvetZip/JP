@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
+h1,
+h2,
+p {
+    text-align: center;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 400;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.navbar {
+    opacity: 0.8;
+    z-index: 99;
+    position: fixed;
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.hamburger {
+    z-index: 16;
+    height: 20%;
+    margin-left: 100px;
+    position: absolute;
+}
+.hamburger:hover {
+    cursor: pointer;
+}
+.navbar-nav {
+    z-index: 15;
+    // background: rgba(0, 0, 0, 0.664);
+    // height: 30%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 2rem;
+    a {
+        color: white;
+        &:hover {
+            color: rgb(255, 255, 255);
+            transform: scale(102%);
+        }
+    }
+    transition: 2s;
+}
+.nav-logo {
+    float: left;
+}
+.nav-icon {
+    padding-right: 1rem;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+* {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    color: white;
+    a {
+        cursor: pointer;
+        color: rgb(24, 24, 24);
+        text-decoration: none;
+        &:hover {
+            color: #1da1f2;
+        }
+    }
+}
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #000000;
+}
+.home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    .logo {
+        width: 45%;
+    }
+}
+
+//desktop
+@media only screen and (min-width: 601px) {
+}
+
+//mobile
+@media only screen and (max-width: 600px) {
+    .navbar {
+        height: 3rem;
+    }
+    .nav-logo {
+        display: none;
+    }
+    .nav-icon {
+        display: none;
+    }
+}
