@@ -10,7 +10,7 @@ import {
 	ServciesIcon,
 	ServciesH2,
 	ServicesP,
-} from "./SertvicesElements";
+} from "./ServicesElements";
 
 const Services = () => {
 	return (

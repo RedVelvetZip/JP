@@ -43,8 +43,8 @@ export const homeObjThree = {
 	lightBg: false,
 	lightText: true,
 	lightTextDesc: true,
-	topLine: "Enjoy Education",
-	headLine: "A smarter way to study",
+	topLine: "Get In Touch",
+	headLine: "Contact Us",
 	description:
 		"Tutorra is the premier online SAT prep course with lesson plans, homework assignments and tutoring to help you improve your SAT score.",
 	buttonLabel: "Get Started",
