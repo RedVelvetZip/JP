@@ -100,41 +100,41 @@ export const NavLink = styled(LinkS).attrs(props => ({
 
 	@media(min-width: 768px){
 		&.active {
-			border-bottom: 3px solid #01bf71;
+			border-bottom: 3px solid #ffb800;
 		}
 	}
 
 	&:hover {
-		color: #01bf71;
+		color: #ffb800;
 		transition: 0.2s ease-in-out;
 	}
 `;
 
-export const NavBtnLink = styled(LinkR)`
-	border-radius: 50px;
-	background: #01bf71;
-	white-space: nowrap;
-	padding: 10px 20px;
-	font-size: 16px;
-	outline: none;
-	border: none;
-	cursor: pointer;
-	transition: all 0.2s ease-in-out;
-	text-decoration: none;
-	color: #010606;
-	margin-left: 50px;
+// export const NavBtnLink = styled(LinkR)`
+// 	border-radius: 50px;
+// 	background: #ffb800;
+// 	white-space: nowrap;
+// 	padding: 10px 20px;
+// 	font-size: 16px;
+// 	outline: none;
+// 	border: none;
+// 	cursor: pointer;
+// 	transition: all 0.2s ease-in-out;
+// 	text-decoration: none;
+// 	color: #010606;
+// 	margin-left: 50px;
 
-	&:hover {
-		transition: all 0.2s ease-in-out;
-		background-color: #fff;
-		color: #01bf71;
-	}
+// 	&:hover {
+// 		transition: all 0.2s ease-in-out;
+// 		background-color: #fff;
+// 		color: #ffb800;
+// 	}
 
-	@media (max-width: 767px) {
-		margin-top: 100px;
-		margin-left: 0;
-	}
-`;
+// 	@media (max-width: 767px) {
+// 		margin-top: 100px;
+// 		margin-left: 0;
+// 	}
+// `;
 export const CloseNavMenu = styled(FaTimes)`
 	color: #fff;
 	position: absolute;

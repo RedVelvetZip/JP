@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import video from "../../videos/video.mp4";
+import video from "../../videos/video2.mp4";
 import {
 	HeroContainer,
 	VideoBg,
@@ -22,15 +22,15 @@ const Hero = () => {
 		<HeroContainer id='home'>
 			<VideoBg autoPlay loop muted src={video} type='video/mp4' />
 			<HeroContent>
-				<HeroH1>Virtual Banking Mode Easy</HeroH1>
+				<HeroH1>Tutorra Tutoring Service</HeroH1>
 				<HeroP>
-					Sing Up For a new tody and receive $250 in credit towards your next
-					payment.
+					Reach out today to accelerate academic growth with Tutorra
 				</HeroP>
 				<HeroButton
 					primary='true'
 					dark='true'
-					to='/sing-in'
+					// to='/sing-in'
+					to='/'
 					onMouseEnter={onHover}
 					onMouseLeave={onHover}
 				>

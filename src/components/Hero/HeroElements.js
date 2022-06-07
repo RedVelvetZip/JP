@@ -71,6 +71,7 @@ export const HeroP = styled.p`
 
 export const HeroButton = styled(Button)`
 	margin-top: 32px;
+	color: #000;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

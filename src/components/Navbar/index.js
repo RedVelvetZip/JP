@@ -8,7 +8,7 @@ import {
 	NavBars,
 	NavMenu,
 	NavLink,
-	NavBtnLink,
+	// NavBtnLink,
 	CloseNavMenu,
 } from "./NavbarElements";
 
@@ -58,9 +58,9 @@ const Navbar = () => {
 					<NavLink to='contact' onClick={handleClick}>
 						Contact
 					</NavLink>
-					<NavBtnLink to='/sing-in' onClick={handleClick}>
-						Sign up
-					</NavBtnLink>
+					{/* <NavBtnLink to='/contact' onClick={handleClick}>
+						Contact
+					</NavBtnLink> */}
 					<CloseNavMenu onClick={handleClick} />
 				</NavMenu>
 			</NavContainer>

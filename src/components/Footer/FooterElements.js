@@ -62,7 +62,7 @@ export const FooterWrap = styled.div`
 // 	font-size: 14px;
 
 // 	&:hover {
-// 		color: #01bf71;
+// 		color: #ffb800;
 // 		transition: 0.3s ease-in-out;
 // 	}
 // `;

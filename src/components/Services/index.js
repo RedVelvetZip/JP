@@ -19,23 +19,23 @@ const Services = () => {
 			<ServicesWrapper>
 				<ServicesCard>
 					<ServciesIcon src={Icon1} />
-					<ServciesH2>Reduce expenses</ServciesH2>
+					<ServciesH2>SAT Prep</ServciesH2>
 					<ServicesP>
-						We helo reduce your fess and increse your overall revenue
+						Prepare for the SAT, ACT, and college admissions.
 					</ServicesP>
 				</ServicesCard>
 				<ServicesCard>
 					<ServciesIcon src={Icon2} />
-					<ServciesH2>Virtual Offices</ServciesH2>
+					<ServciesH2>High School Cirriculum</ServciesH2>
 					<ServicesP>
-						You can access our platform online anywhere in the world!
+						Get 1 on 1 focus for English, math, and sciences
 					</ServicesP>
 				</ServicesCard>
 				<ServicesCard>
 					<ServciesIcon src={Icon3} />
-					<ServciesH2>Premium Benefits</ServciesH2>
+					<ServciesH2>Software Development</ServciesH2>
 					<ServicesP>
-						Unlock our special membership card that return 5% cash back.
+						Learn development at beginner, intermediate, or advanced levels
 					</ServicesP>
 				</ServicesCard>
 			</ServicesWrapper>

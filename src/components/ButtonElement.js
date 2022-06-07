@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Button = styled(Link)`
 	border-radius: 50px;
-	background-color: ${({ primary }) => (primary ? "#01bf71" : "#010606")};
+	background-color: ${({ primary }) => (primary ? "#ffb800" : "#010606")};
 	white-space: nowrap;
 	padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
 	color: ${({ dark }) => (dark ? "#010606" : "#FFF")};
@@ -19,6 +19,6 @@ export const Button = styled(Link)`
 
 	&:hover {
 		transition: all 0.2s ease-in-out;
-		background-color: ${({ primary }) => (primary ? "#FFF" : "#01bf71")};
+		background-color: ${({ primary }) => (primary ? "#FFF" : "#ffb800")};
 	}
 `;
