@@ -1,8 +1,5 @@
 import './styles/main.scss'
-import hamburger from './assets/hamburger.png'
 import { useState } from 'react';
-// import logo from './assets/logo-short.png'
-import Navbar from './components/Navbar'
 
 type mindmapState = 'closed' | 'values' | 'products' | 'metaverse' | 'marketing'
 
@@ -16,43 +13,57 @@ function App() {
 
   return (
     <div className="App">
-     
       <div className="navbar">
-        <div className="tutorra">
-          {/* add logo */}
-          <p className="title">Tutorra</p>
+        <a href="#home" className="nav-link">
+          <div className="tutorra">
+            {/* add logo */}
+            <p className="title">Tutorra</p>
+          </div>
+        </a>
+
+        <div className="navbar-nav">
+          <a href="#about" className="nav-link">
+            About
+          </a>
+          <a href="#courses" className="nav-link">
+            Courses
+          </a>
+          <a href="#pricing" className="nav-link">
+            Pricing
+          </a>
         </div>
-        <div>
-          <p>About</p>
-          <p>Courses</p>
-          <p>Pricing</p>
-        </div>
-        <div>
-          Contact Us
-        </div>
+        <a href="#contact" className="nav-link">
+          <div className="contact-button">
+            <p>Contact</p>
+          </div>
+        </a>
+
       </div>
       <section id="home" className="home">
-        <div className="home-title">
-          <h1 className="lltk">
-            TUTORRA
-          </h1>
-        </div>
-        <div className="home-char">
-          <p>
-            [Company name] is the fastest way to get your child where they want to be.
-
-            We offer a wide range of services, including SAT prep, tutoring, and help with high school. Our goal is to make sure that you and your child are on track for college acceptance—and we're confident that if you work with us, you'll be able to achieve a higher SAT score, improve grades, and more.
-          </p>
-        </div>
-
+        HOME
       </section>
-      <section id="values" className="values">
-        <div className="values-title">
-          <div className="values-text">
-            <p>xxx</p>
-          </div>
-        </div>
+      <section id="about" className="about">
+        <h1>
+          TUTORRA
+        </h1>
+        <p>
+          Tutorra is the fastest way to get your child where they want to be.
+
+          We offer a wide range of services, including SAT prep, tutoring, and help with high school. Our goal is to make sure that you and your child are on track for college acceptance—and we're confident that if you work with us, you'll be able to achieve a higher SAT score, improve grades, and more.
+        </p>
       </section>
+      <section id="courses" className="courses">
+        <p>Courses</p>
+      </section>
+      <section id="pricing" className="pricing">
+        <p>Pricing</p>
+      </section>
+      <section id="contact" className="contact">
+        <p>Contact</p>
+      </section>
+      <div className="footer">
+        All Rights Reserved
+      </div>
     </div>
   );
 }
@@ -60,7 +71,7 @@ function App() {
 export default App;
 
 
- {/* <ul className="navbar-nav">
+{/* <ul className="navbar-nav">
             <li>
               <a href="#" className="nav-link">
                 <span>Home</span>
