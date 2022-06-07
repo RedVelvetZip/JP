@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "../ButtonElement";
+import React, { useRef } from "react";
+// import { Button } from "../ButtonElement";
 import {
   InfoContainer,
   InfoWrapper,
@@ -8,12 +8,14 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  SubTitle,
-  BtnWrap,
+  // SubTitle,
+  // BtnWrap,
   ImgWrap,
   Img,
+  StyledContactForm,
 } from "./InfoElements";
 import img4 from "../../Images/img4.svg";
+import emailjs from "@emailjs/browser";
 
 const Contact = ({}) => {
   const id = "contact";
@@ -24,8 +26,30 @@ const Contact = ({}) => {
   const imgStart = true;
   const img = img4;
   const alt = "Studying";
-  const primary = true;
-  const dark = true;
+  // const primary = true;
+  // const dark = true;
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_1qknfpb",
+        "template_jrfm95d",
+        form.current,
+        "B-Vj6MItbjfE_g6FG"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
@@ -34,23 +58,45 @@ const Contact = ({}) => {
             <TextWrapper>
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headLine}</Heading>
-              <div>
-                <form>
-                  <label>
-                    Name:
-                    <input type="text" />
-                  </label>
-                  <label>
-                    Email:
-                    <input type="text" />
-                  </label>
-                  <label>
-                    Message:
-                    <input type="text" />
-                  </label>
+              <StyledContactForm>
+                <form ref={form} onSubmit={sendEmail}>
+                  <label>Name</label>
+                  <input type="text" name="user_name" />
+                  <label>Email</label>
+                  <input type="email" name="user_email" />
+                  <label>Message</label>
+                  <textarea name="message" />
+                  <input type="submit" value="Send" />
                 </form>
-              </div>
-              <BtnWrap>
+              </StyledContactForm>
+              {/* <div>
+                <form
+                  id="contact-form"
+                  // onSubmit={this.handleSubmit.bind(this)}
+                  method="POST"
+                >
+                  <div className="form-group">
+                    <label htmlFor="name">Name</label>
+                    <input type="text" className="form-control" />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="message">Message</label>
+                    <textarea className="form-control" rows="5"></textarea>
+                  </div>
+                  <button type="submit" className="btn btn-primary">
+                    Submit
+                  </button>
+                </form>
+              </div> */}
+              {/* <BtnWrap>
                 <Button
                   smooth={true}
                   duration={500}
@@ -63,7 +109,7 @@ const Contact = ({}) => {
                 >
                   Submit
                 </Button>
-              </BtnWrap>
+              </BtnWrap> */}
             </TextWrapper>
           </Column>
           <Column>
