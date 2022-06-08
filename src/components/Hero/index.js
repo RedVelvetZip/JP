@@ -29,7 +29,7 @@ const Hero = () => {
 				<HeroButton
 					primary='true'
 					dark='true'
-					to='contact'
+					to='/contact'
 					onMouseEnter={onHover}
 					onMouseLeave={onHover}
 				>
