@@ -8,7 +8,6 @@ import {
 	NavBars,
 	NavMenu,
 	NavLink,
-	// NavBtnLink,
 	CloseNavMenu,
 } from "./NavbarElements";
 
@@ -58,9 +57,6 @@ const Navbar = () => {
 					<NavLink to='contact' onClick={handleClick}>
 						Contact
 					</NavLink>
-					{/* <NavBtnLink to='/contact' onClick={handleClick}>
-						Contact
-					</NavBtnLink> */}
 					<CloseNavMenu onClick={handleClick} />
 				</NavMenu>
 			</NavContainer>
