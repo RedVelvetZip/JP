@@ -32,7 +32,7 @@ export const Row = styled.div`
 
 export const Column = styled.div`
 	margin-bottom: 15px;
-	padding: 0 15px;
+	padding: 0 15px;	  
 `;
 
 export const TextWrapper = styled.div`
